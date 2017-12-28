@@ -39,7 +39,7 @@ client.on('message', message => {
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find('name', 'new-member-entry');
   if (!channel) return;
-  channel.send(`Welcome to the Cobalt Nation Discord server, ${member}! In order to smoothly and automatically receive your role(s), please follow the instructions below.\n\n1. Say !linkaccount <username> where "<username>" is your exact ROBLOX username. For example, !linkaccount XxZONExXx would link Zone's Discord account to his ROBLOX account.\n2. Link your account via the given instructions\n3. say !getrole to receive your role.\nIf you need help, ask any @High Rank!`);
+  channel.send(`Welcome to the Cobalt Nation Discord server, ${member}! In order to smoothly and automatically receive your role(s), please follow the instructions below.\n\n1. Say !linkaccount <username> where "<username>" is your exact ROBLOX username. For example, !linkaccount XxZONExXx would link Zone's Discord account to his ROBLOX account.\n2. Link your account via the given instructions\n3. say !getrole to receive your role.\n\nIf you need help, ask any @High Rank!`);
 });
 
 client.login('Mzk1NjY0MDcxODM3NDgzMDMx.DSWKbg.0JL1QtoK_a6Q27v-htwcErA0kb0');
