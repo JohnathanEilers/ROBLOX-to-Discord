@@ -28,6 +28,8 @@ app.listen(port, () => {
 
 client.on('ready', () => {
   console.log('Starting R2D v' + version);
+  const channel = member.guild.channels.find('name', 'new-member-entry');
+  channel.send(`Thanks Jess`);
 });
 
 client.on('message', message => {
