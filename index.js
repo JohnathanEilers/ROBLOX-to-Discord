@@ -27,6 +27,10 @@ client.on('message', message => {
   if (message.content.substring(0,13) === prefix + 'linkaccount ') {
     message.channel.sendMessage('In progress!');
   }
+  
+  if (message.content === prefix + 'linkaccount') {
+	message.channel.sendMessage('Incorrect syntax, ' .. message.author.mention() .. '. Correct syntax is **!linkaccount <username>***, where <username> is your ROBLOX username!')
+  }
 });
 
 client.on('guildMemberAdd', member => {
