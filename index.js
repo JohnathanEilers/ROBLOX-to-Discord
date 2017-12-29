@@ -24,7 +24,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.content === prefix + 'linkaccount ') {
+  if (message.content.substring(0,13) === prefix + 'linkaccount ') {
     message.reply('In progress!');
   }
 });
