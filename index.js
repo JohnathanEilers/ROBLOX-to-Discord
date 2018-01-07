@@ -3,7 +3,8 @@ const app = express();
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const version = '1.0.0'
-const prefix = '!'
+const prefix = '>!'
+const guild = Client.guilds.
 
 const port = process.env.PORT || 5000;
 
@@ -24,12 +25,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+  const guild = message.guild
   if (message.content.substring(0,13) === prefix + 'linkaccount ') {
-    message.channel.sendMessage('In progress!');
+	  const username = message.content.substring(13)
+	  message.channel.sendMessage('Hey there, ' + username + "! I'll need you to join the game linked below so i can make sure you're really you. Once you're here, DM me the verification code the game gave you!");
   }
   
   if (message.content === prefix + 'linkaccount') {
-	message.channel.sendMessage('Incorrect syntax, ${message.author}! Correct syntax is **!linkaccount <username>**, where <username> is your ROBLOX username.')
+	message.channel.sendMessage('Incorrect syntax! Correct syntax is **!linkaccount <username>**, where <username> is your ROBLOX username.')
   }
 });
 
