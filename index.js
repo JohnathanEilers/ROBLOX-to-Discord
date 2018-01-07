@@ -29,7 +29,7 @@ client.on('message', message => {
   }
   
   if (message.content === prefix + 'linkaccount') {
-	message.channel.sendMessage('Incorrect syntax, ' .. message.author.mention() .. '. Correct syntax is **!linkaccount <username>***, where <username> is your ROBLOX username!')
+	message.channel.sendMessage('Incorrect syntax, ${message.author}! Correct syntax is **!linkaccount <username>**, where <username> is your ROBLOX username.')
   }
 });
 
@@ -39,7 +39,7 @@ client.on('guildMemberAdd', member => {
   channel.send(`Welcome to the Cobalt Nation Discord server, ${member}! In order to smoothly and automatically receive your role(s), please follow the instructions below.\n\n1. Say !linkaccount <username> where "<username>" is your exact ROBLOX username. For example, !linkaccount XxZONExXx would link Zone's Discord account to his ROBLOX account.\n2. Link your account via the given instructions\n3. say !getrole to receive your role.\n\nIf you need help, ask any @High Rank!`);
 });
 
-client.login('Mzk2MTQ2MzU0ODg5NDI0ODk5.DSdLjw.i_XScCg3d6RiErIFbnFsR-MfkFc');
+client.login('Mzk5NDIyMzUxNjgwMzM5OTgw.DTM6yg.LDpJaIrKKXFgPdL8EEfTeGk6tL4');
 
 var http = require("http");
 setInterval(function() {
